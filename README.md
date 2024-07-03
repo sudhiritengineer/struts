@@ -2,20 +2,31 @@ Struts 1.3.10 example:
 Let's break down a simple Struts 1.3.10 application into its components and describe the request flow. Please note that this is a high-level overview and the actual implementation may vary based on your specific requirements.
 
 Components
-ActionServlet: This is the controller in the MVC architecture. It receives all requests from the client9.
-struts-config.xml: This file contains the configuration details for the Struts application. It defines the action mappings9.
-ActionForm: This is a JavaBean that encapsulates the input data from the request9.
-Action: This class processes the client requests and returns an ActionForward object which tells the Struts controller what view to render9.
+----------
+ActionServlet: This is the controller in the MVC architecture. It receives all requests from the client.
+
+struts-config.xml: This file contains the configuration details for the Struts application. It defines the action mappings.
+
+ActionForm: This is a JavaBean that encapsulates the input data from the request.
+
+Action: This class processes the client requests and returns an ActionForward object which tells the Struts controller what view to render.
+
+*************
 Request Flow
-The client sends a request to the server9
-The request is received by the ActionServlet9.
-The ActionServlet reads the struts-config.xml file and determines which Action class should handle the request9.
-The ActionServlet populates an ActionForm object with the data from the request9.
-The appropriate Action class is invoked to process the request9.
-The Action class executes business logic and returns an ActionForward object9.
-The ActionServlet uses the ActionForward object to determine which view should be rendered9.
-The response is sent back to the client9.
+*************
+- The client sends a request to the server
+- The request is received by the ActionServlet.
+- The ActionServlet reads the struts-config.xml file and determines which Action class should handle the request.
+- The ActionServlet populates an ActionForm object with the data from the request.
+- The appropriate Action class is invoked to process the request.
+- The Action class executes business logic and returns an ActionForward object.
+- The ActionServlet uses the ActionForward object to determine which view should be rendered.
+- The response is sent back to the client.
+
+
+
 Here's a simple example of a login feature using Struts 1.3.10:
+---------------------------------------------------------------
 
 
 // LoginAction.java
