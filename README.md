@@ -28,7 +28,7 @@ Request Flow
 Here's a simple example of a login feature using Struts 1.3.10:
 ---------------------------------------------------------------
 
-
+-----------------------------------------------------------------
 // LoginAction.java
 public class LoginAction extends Action {
     public ActionForward execute(ActionMapping mapping, ActionForm form,
@@ -44,7 +44,7 @@ public class LoginAction extends Action {
     }
 }
 
-
+---------------------------------------------------------------------
 
 // LoginForm.java
 public class LoginForm extends ActionForm {
@@ -55,7 +55,7 @@ public class LoginForm extends ActionForm {
 }
 
 
-
+---------------------------------------------------------------------
 
 // struts-config.xml
 <action-mappings>
@@ -65,7 +65,7 @@ public class LoginForm extends ActionForm {
     </action>
 </action-mappings>
 
-
+---------------------------------------------------------------------
 
 
 // login.jsp
@@ -75,7 +75,7 @@ public class LoginForm extends ActionForm {
     <html:submit value="Login" />
 </html:form>
 
-
+---------------------------------------------------------------------
 
 
 In this example, when the client submits the login form, the request is handled by LoginAction. If the username and password are the same, it forwards to welcome.jsp, otherwise, it forwards to error.jsp1.
