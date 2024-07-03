@@ -1,5 +1,5 @@
 Struts 1.3.10 example:
-Sure, let's break down a simple Struts 1.3.10 application into its components and describe the request flow. Please note that this is a high-level overview and the actual implementation may vary based on your specific requirements.
+Let's break down a simple Struts 1.3.10 application into its components and describe the request flow. Please note that this is a high-level overview and the actual implementation may vary based on your specific requirements.
 
 Components
 ActionServlet: This is the controller in the MVC architecture. It receives all requests from the client9.
